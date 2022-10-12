@@ -41,39 +41,30 @@ const Editor = ({ onChange, name, value }) => {
   }, [mediaLibBlockIndex, editorInstance]);
 
   const handleReady = (editor) => {
+    const undo = new Undo({ editor });
+
+    undo.initialize(value);
+
+    new DragDrop(editor);
     if (value && JSON.parse(value).blocks.length) {
       editor.blocks.render(JSON.parse(value));
     }
     document.querySelector('[data-tool="image"]').remove();
   };
 
-  const handleChange = (api, newData) => {
-    if (!newData.blocks.length) {
-      newData = null;
-      onChange({ target: { name, value: newData } });
-    } else {
-      onChange({ target: { name, value: JSON.stringify(newData) } });
-    }
+  const handleChange = (api) => {
+    api.saver.save().then((res) => {
+      onChange({ target: { name, value: JSON.stringify(res) } });
+    });
   };
 
   const customImageTool = {
     mediaLib: {
       class: MediaLibAdapter,
       config: {
-        mediaLibToggleFunc
-      }
-    }
-  }
-
-  const handleReady = (editor) => {
-    new Undo({ editor });
-    new DragDrop(editor);
-    if(value && JSON.parse(value).blocks.length) {
-      editor.blocks.render(JSON.parse(value))
-    }
-    if (document.querySelector('[data-tool="image"]')) {
-      document.querySelector('[data-tool="image"]').remove()
-    }
+        mediaLibToggleFunc,
+      },
+    },
   };
 
   return (

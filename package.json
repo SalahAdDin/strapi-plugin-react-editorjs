@@ -32,7 +32,9 @@
     "@editorjs/underline": "1.0.0",
     "@editorjs/warning": "1.2.0",
     "clsx": "1.2.1",
+    "editorjs-drag-drop": "^1.1.7",
     "editorjs-text-alignment-blocktune": "1.0.3",
+    "editorjs-undo": "^2.0.9",
     "get-file-object-from-local-path": "1.0.2",
     "open-graph-scraper": "4.11.1",
     "react-editor-js": "2.1.0"

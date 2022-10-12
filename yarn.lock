@@ -138,7 +138,7 @@
   version "1.2.2"
   resolved "https://registry.npmjs.org/@editorjs/marker/-/marker-1.2.2.tgz"
 
-"@editorjs/nested-list@^1.0.2":
+"@editorjs/nested-list@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@editorjs/nested-list/-/nested-list-1.0.2.tgz#4eaacfddb0802d0cd612bdd3269d6daa58bf7fab"
   integrity sha512-NumQfEivI29lOAuDMyVhn+VXUDGvWUPJMkjgKlUYRbnwgnPL4tK007+UzoVPLxv/f6lPOqeKcApvCj/MfskPNw==
@@ -161,7 +161,7 @@
   resolved "https://registry.yarnpkg.com/@editorjs/table/-/table-2.0.4.tgz#37a44e3200cbb884d14fa6b62367650a22210343"
   integrity sha512-2VLdm9724Q8rup3ukv95yjcjGvOwTtC4+aN2Lrd5U5ozEHSwdwg+kmGMUsq9ev2x2WmfUCBM/hj5s8TjGTA84g==
 
-"@editorjs/underline@^1.0.0":
+"@editorjs/underline@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@editorjs/underline/-/underline-1.0.0.tgz#47e5e5fde7a3dd071bc9f4faed90b4f518b7e3db"
   integrity sha512-2qbmr6/Y5ZIsfmJeAxLujCndc5wpIEQ2uxoPIdR3uHIUQhA6Q28U5HdoGpEZwsP1d7e/A/vBhN18Ugro0iA0MQ==
@@ -459,9 +459,10 @@
   dependencies:
     "@react-editor-js/core" "2.1.0"
 
-"@semantic-release/changelog@^6.0.1":
+"@semantic-release/changelog@6.0.1":
   version "6.0.1"
-  resolved "https://registry.npmjs.org/@semantic-release/changelog/-/changelog-6.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-6.0.1.tgz#8dd0334fd8c7d50cda747d2591e4f18f816b3c9c"
+  integrity sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA==
   dependencies:
     "@semantic-release/error" "^3.0.0"
     aggregate-error "^3.0.0"
@@ -488,9 +489,10 @@
   version "3.0.0"
   resolved "https://registry.npmjs.org/@semantic-release/error/-/error-3.0.0.tgz"
 
-"@semantic-release/git@^10.0.1":
+"@semantic-release/git@10.0.1":
   version "10.0.1"
-  resolved "https://registry.npmjs.org/@semantic-release/git/-/git-10.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-10.0.1.tgz#c646e55d67fae623875bf3a06a634dd434904498"
+  integrity sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==
   dependencies:
     "@semantic-release/error" "^3.0.0"
     aggregate-error "^3.0.0"
@@ -1209,9 +1211,10 @@ cz-conventional-changelog@3.2.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
-cz-conventional-changelog@^3.3.0:
+cz-conventional-changelog@3.3.0:
   version "3.3.0"
-  resolved "https://registry.npmjs.org/cz-conventional-changelog/-/cz-conventional-changelog-3.3.0.tgz"
+  resolved "https://registry.yarnpkg.com/cz-conventional-changelog/-/cz-conventional-changelog-3.3.0.tgz#9246947c90404149b3fe2cf7ee91acad3b7d22d2"
+  integrity sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==
   dependencies:
     chalk "^2.4.1"
     commitizen "^4.0.3"
@@ -1373,10 +1376,22 @@ duplexer2@~0.1.0:
   dependencies:
     readable-stream "^2.0.2"
 
-editorjs-text-alignment-blocktune@^1.0.3:
+editorjs-drag-drop@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/editorjs-drag-drop/-/editorjs-drag-drop-1.1.7.tgz#bcb4bc8dfc4429f5ab5403e0d0783f804c116aec"
+  integrity sha512-JafS+ejUR1InFlK+Gp5OE09eL2APKEYVJUuAFbZjkQTHRYhXPhI88MmUiMYUTn9EnT0nArII6NC5V+Oz7GLGSA==
+
+editorjs-text-alignment-blocktune@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/editorjs-text-alignment-blocktune/-/editorjs-text-alignment-blocktune-1.0.3.tgz#7942fe2d3fbdbd7fcfd10fbb9b341c97ec3eb84f"
   integrity sha512-DAJ2LJP+WjETvU4lVOJCqZ1kZkKHp0GkujkqZgza9DRv7bO46m1M/s2d5Ba5hPFdmqk1vA/ci++MQXgWD7mWYw==
+
+editorjs-undo@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/editorjs-undo/-/editorjs-undo-2.0.9.tgz#f5203600d752b479a43802e1a828ed82a878c253"
+  integrity sha512-BeQdsuQHX8NBpVHxgUBEvgChGsR4I6aiAoThhL5A8gsngCukVi1elHhB+Hetp6nZPK9365t4dkbcSMk38aRizA==
+  dependencies:
+    vanilla-caret-js "^1.0.1"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -3297,9 +3312,10 @@ safe-buffer@~5.2.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-semantic-release@^19.0.2:
-  version "19.0.3"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-19.0.3.tgz#9291053ad9890052f28e7c5921d4741530d516fd"
+semantic-release@19.0.2:
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-19.0.2.tgz#6011683c06d7b416e5faa5a3f43b22bbf3798aa8"
+  integrity sha512-7tPonjZxukKECmClhsfyMKDt0GR38feIC2HxgyYaBi+9tDySBLjK/zYDLhh+m6yjnHIJa9eBTKYE7k63ZQcYbw==
   dependencies:
     "@semantic-release/commit-analyzer" "^9.0.2"
     "@semantic-release/error" "^3.0.0"
@@ -3755,6 +3771,11 @@ validator@^13.7.0:
   version "13.7.0"
   resolved "https://registry.yarnpkg.com/validator/-/validator-13.7.0.tgz#4f9658ba13ba8f3d82ee881d3516489ea85c0857"
   integrity sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==
+
+vanilla-caret-js@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vanilla-caret-js/-/vanilla-caret-js-1.1.0.tgz#851acd7be81998223ce69ae1b62e03f472fa4e90"
+  integrity sha512-vl3R4Xjqb+xnM0gYyg+wcqWGYwKKnkz58Yj29/FQB+w+yP7R8IR1DGoJnDIs05moEZiGlQUTabPMoEtnQNcrpQ==
 
 walk-up-path@^1.0.0:
   version "1.0.0"
