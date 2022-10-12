@@ -4,6 +4,7 @@ import Undo from "editorjs-undo";
 import PropTypes from "prop-types";
 import React, { useCallback, useState } from "react";
 import EditorJs from "react-editor-js";
+import { createReactEditorJS } from "react-editor-js";
 
 import customTools from "../../config/customTools";
 import MediaLibAdapter from "../medialib/adapter";
@@ -13,6 +14,8 @@ import { getI18N } from "./locales";
 import requiredTools from "./requiredTools";
 
 const localStorageKey = "strapi-admin-language";
+
+const EditorJS = createReactEditorJS();
 
 const Editor = ({ onChange, name, value }) => {
   const [{ query }] = useQueryParams();
@@ -74,6 +77,7 @@ const Editor = ({ onChange, name, value }) => {
     <>
       <div style={{ border: `1px solid rgb(227, 233, 243)`, borderRadius: `2px`, marginTop: `4px` }}>
         <EditorJs
+        <EditorJS
           // data={JSON.parse(value)}
           // enableReInitialize={true}
           onReady={handleReady}
