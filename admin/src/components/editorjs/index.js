@@ -40,6 +40,22 @@ const Editor = ({ onChange, name, value }) => {
     mediaLibToggleFunc();
   }, [mediaLibBlockIndex, editorInstance]);
 
+  const handleReady = (editor) => {
+    if (value && JSON.parse(value).blocks.length) {
+      editor.blocks.render(JSON.parse(value));
+    }
+    document.querySelector('[data-tool="image"]').remove();
+  };
+
+  const handleChange = (api, newData) => {
+    if (!newData.blocks.length) {
+      newData = null;
+      onChange({ target: { name, value: newData } });
+    } else {
+      onChange({ target: { name, value: JSON.stringify(newData) } });
+    }
+  };
+
   const customImageTool = {
     mediaLib: {
       class: MediaLibAdapter,
@@ -67,13 +83,9 @@ const Editor = ({ onChange, name, value }) => {
           // data={JSON.parse(value)}
           // enableReInitialize={true}
           onReady={handleReady}
-          onChange={(api) => {
-            api.saver.save().then((res) => {
-              onChange({ target: { name, value: JSON.stringify(res) } });
-            });
-          }}
-          tools={{...requiredTools, ...customTools, ...customImageTool}}
-          instanceRef={instance => setEditorInstance(instance)}
+          onChange={handleChange}
+          tools={{ ...requiredTools, ...customTools, ...customImageTool }}
+          instanceRef={(instance) => setEditorInstance(instance)}
           i18n={getI18N(currentLanguage)}
         />
       </div>
