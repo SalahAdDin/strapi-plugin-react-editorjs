@@ -1,17 +1,16 @@
-import { useQueryParams } from "@strapi/helper-plugin";
-import DragDrop from "editorjs-drag-drop";
-import Undo from "editorjs-undo";
-import PropTypes from "prop-types";
-import React, { useCallback, useState } from "react";
-import EditorJs from "react-editor-js";
-import { createReactEditorJS } from "react-editor-js";
+import { useQueryParams } from '@strapi/helper-plugin';
+import DragDrop from 'editorjs-drag-drop';
+import Undo from 'editorjs-undo';
+import PropTypes from 'prop-types';
+import React, { useCallback, useState } from 'react';
+import { createReactEditorJS } from 'react-editor-js';
 
-import customTools from "../../config/customTools";
-import MediaLibAdapter from "../medialib/adapter";
-import MediaLibComponent from "../medialib/component";
-import { changeFunc, getToggleFunc } from "../medialib/utils";
-import { getI18N } from "./locales";
-import requiredTools from "./requiredTools";
+import customTools from '../../config/customTools';
+import MediaLibAdapter from '../medialib/adapter';
+import MediaLibComponent from '../medialib/component';
+import { changeFunc, getToggleFunc } from '../medialib/utils';
+import { getI18N } from './locales';
+import requiredTools from './requiredTools';
 
 const localStorageKey = "strapi-admin-language";
 
