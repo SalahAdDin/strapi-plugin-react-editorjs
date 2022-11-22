@@ -7,8 +7,8 @@ module.exports = {
         path: "/link",
         handler: "editorjs.link",
         config: {
-          "description": "Get a URL link",
-          auth: false
+          description: "Get a URL link",
+          auth: false,
         },
       },
       {
@@ -16,7 +16,7 @@ module.exports = {
         path: "/image/byFile",
         handler: "editorjs.byFile",
         config: {
-          auth: false
+          auth: false,
         },
       },
       {
@@ -24,9 +24,25 @@ module.exports = {
         path: "/image/byUrl",
         handler: "editorjs.byURL",
         config: {
-          auth: false
+          auth: false,
         },
       },
-    ]
-  }
-}
+      {
+        method: "POST",
+        path: "/video/byFile",
+        handler: "editorjs.byFile",
+        config: {
+          auth: false,
+        },
+      },
+      {
+        method: "POST",
+        path: "/video/byUrl",
+        handler: "editorjs.byURL",
+        config: {
+          auth: false,
+        },
+      },
+    ],
+  },
+};
